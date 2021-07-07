@@ -1,2 +1,0 @@
-# chatX
-chat application
