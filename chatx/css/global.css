@@ -1,0 +1,198 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+
+  --blueDark: #043c6b;
+  --blueLight: #66a1d2;
+  --orange: #ffaa40;
+  --orangeLight: #ffc173;
+  --greeLight: #00af64;
+  --greeBlue: #1e796a;
+  --gray: #eef5ff;
+  font-size: 85%;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  height: 100vh;
+  background: var(--gray);
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button,
+.button {
+  border-radius: 0.8rem;
+  height: 5rem;
+}
+
+button,
+.button {
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  background: var(--orange);
+  cursor: pointer;
+  transition: filter 0.2s;
+  color: var(--blueDark);
+  justify-content: center;
+}
+
+button:hover,
+.button:hover {
+  filter: brightness(1.2);
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+button > img,
+.button > img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+button.outLined,
+.button.outLined {
+  background: var(--gray);
+  color: var(--greeBlue);
+  border: 0.2rem solid var(--blueLight);
+}

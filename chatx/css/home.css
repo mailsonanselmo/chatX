@@ -1,0 +1,34 @@
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 12.5rem 1fr;
+  grid-template-areas:
+    "header header"
+    "left right";
+}
+
+header {
+  grid-area: header;
+}
+
+#bg {
+  grid-area: left;
+  background: url("/img/icon.png") no-repeat/content;
+}
+
+main {
+  grid-area: right;
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  width: min(36.3rem 100%);
+}
+
+main h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--blueDark);
+  font-size: clamp(15px, 5vw, 2rem);
+  margin-bottom: 2.4rem;
+}
